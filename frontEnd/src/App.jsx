@@ -1,8 +1,13 @@
-
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Welcome from "./pages/Welcome";
 
 const App = () => {
   return (
-    <div>App</div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Welcome/>} />
+      </Routes>
+    </Router>
   )
 }
 
